@@ -1,13 +1,10 @@
 // Copyright AGADO Studio. All Rights Reserved.
 
-#include <iostream>
-
 #include "agadoEngine.h"
+#include "Core/Log/Logger.h"
 
 int main(int argc, char *argv[])
 {
-    agado::AgadoEngine engine;
-    engine.Init();
-
-    engine.Destroy();
+    agado::AgadoEngine::Get().Create();
+    agado::AgadoEngine::Get().Destroy();
 }

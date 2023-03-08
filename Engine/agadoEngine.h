@@ -5,20 +5,25 @@
 
 #include "Common/CommonHeaders.h"
 #include "Core/Singleton.h"
-#include "Core/Log/Logger.h"
 
 namespace agado
 {
     /**
      * Entry point for an Engine DLL
      */
-    class AGADOENGINE_API AgadoEngine
+    class AGADOENGINE_API AgadoEngine : public Singleton<AgadoEngine>
     {
+        friend class Singleton<AgadoEngine>;
+
+    private:
+        AgadoEngine() = default;
+        ~AgadoEngine() = default;
+
     public:
         /**
          * Sets up the engine
          */
-        void Init();
+        void Create();
 
         /**
          * Destroys the engine instance

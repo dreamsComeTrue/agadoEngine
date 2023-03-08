@@ -11,10 +11,10 @@ namespace agado
      * Singleton is a class which allows only one instance to be available globally
      */
     template <typename T>
-    class AGADOENGINE_API Singleton
+    class Singleton
     {
     protected:
-        inline static T *m_Instance{nullptr};
+        static inline T *m_Instance{nullptr};
         Singleton() = default;
         ~Singleton() = default;
 
