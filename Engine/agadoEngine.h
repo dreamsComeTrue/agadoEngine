@@ -4,6 +4,7 @@
 #define _AGADO_ENGINE_H_
 
 #include "Common/CommonHeaders.h"
+#include "Core/Singleton.h"
 #include "Core/Log/Logger.h"
 
 namespace agado

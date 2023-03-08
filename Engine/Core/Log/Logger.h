@@ -10,27 +10,15 @@ namespace agado
     /**
      * Logs information to console/file
      */
-    class AGADOENGINE_API Logger
+    class AGADOENGINE_API Logger : public Singleton<Logger>
     {
+        friend class Singleton<Logger>;
+
     private:
-        inline static Logger *m_LogInstance{nullptr};
         Logger() = default;
         ~Logger() = default;
 
     public:
-        Logger(const Logger &) = delete;
-        Logger &operator=(const Logger &) = delete;
-
-        static Logger *Get()
-        {
-            if (!m_LogInstance)
-            {
-                m_LogInstance = new Logger();
-            }
-
-            return m_LogInstance;
-        }
-
         /**
          * Initializes basic logger configuration
          */

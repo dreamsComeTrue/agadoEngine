@@ -6,12 +6,12 @@ namespace agado
 {
     void AgadoEngine::Init()
     {
-        Logger::Get()->Initialize();
+        Logger::Get().Initialize();
     }
 
     void AgadoEngine::Destroy()
     {
-        Logger::Get()->Destroy();
+        Logger::Get().Destroy();
     }
 
 } // namespace agado
