@@ -1,10 +1,17 @@
+// Copyright AGADO Studio. All Rights Reserved.
+
 #include "Common/EnginePCH.h"
 
 namespace agado
 {
-    void AgadoEngine::Initialize()
+    void AgadoEngine::Init()
     {
-        std::cout << "agadoEngine initialization!\n";
+        Logger::Get()->Initialize();
+    }
+
+    void AgadoEngine::Destroy()
+    {
+        Logger::Get()->Destroy();
     }
 
 } // namespace agado

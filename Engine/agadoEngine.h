@@ -1,7 +1,10 @@
+// Copyright AGADO Studio. All Rights Reserved.
+
 #ifndef _AGADO_ENGINE_H_
 #define _AGADO_ENGINE_H_
 
 #include "Common/CommonHeaders.h"
+#include "Core/Log/Logger.h"
 
 namespace agado
 {
@@ -14,7 +17,12 @@ namespace agado
         /**
          * Sets up the engine
          */
-        void Initialize();
+        void Init();
+
+        /**
+         * Destroys the engine instance
+         */
+        void Destroy();
     };
 
 } //  namespace agado

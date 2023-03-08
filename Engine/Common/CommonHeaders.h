@@ -1,3 +1,5 @@
+// Copyright AGADO Studio. All Rights Reserved.
+
 #ifndef _COMMON_HEADERS_H_
 #define _COMMON_HEADERS_H_
 
