@@ -36,6 +36,6 @@
 
 # Engine specific locations
 Binaries/
-Build/Projects/
+Build/
 
 agadoEngine.sln

@@ -5,6 +5,11 @@
 
 int main(int argc, char *argv[])
 {
-    agado::AgadoEngine::Get().Create();
-    agado::AgadoEngine::Get().Destroy();
+    using namespace agado;
+    
+    AgadoEngine::Get().Create();
+    
+    Logger::Get().Debug("Hello from agadoEditor!");
+    
+    AgadoEngine::Get().Destroy();
 }

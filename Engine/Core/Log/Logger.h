@@ -22,8 +22,8 @@ namespace agado
 #define LOG_WARNING_TEXT "[ WARNING ]"
 #define LOG_INFO_TEXT "[  INFO   ]"
 
-    std::string FormatTime();
-    std::string FormatLogLevel(unsigned int level);
+    AGADOENGINE_API std::string FormatTime();
+    AGADOENGINE_API std::string FormatLogLevel(unsigned int level);
 
     /**
      * Logs information to console/file
